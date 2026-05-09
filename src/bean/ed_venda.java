@@ -15,6 +15,7 @@ public class ed_venda {
     private Date ed_DataVenda;
     private double ed_Total;
     private String ed_FormaPagamento;
+    private String ed_status;
     
     private int ed_fk_Cliente;
     private int ed_fk_Usuarios;
@@ -50,6 +51,14 @@ public class ed_venda {
 
     public void setEd_FormaPagamento(String ed_FormaPagamento) {
         this.ed_FormaPagamento = ed_FormaPagamento;
+    }
+
+    public String getEd_status() {
+        return ed_status;
+    }
+
+    public void setEd_status(String ed_status) {
+        this.ed_status = ed_status;
     }
 
     public int getEd_fk_Cliente() {

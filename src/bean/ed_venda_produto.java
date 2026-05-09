@@ -11,10 +11,9 @@ package bean;
 public class ed_venda_produto {
     private int ed_idVendaProduto;
     private int ed_Quantidade;
-    private double ed_PrecoUnitario;
+    private double ed_ValorUnitario;
     private double ed_Subtotal;
     
-    // FKs
     private int ed_fk_Venda;
     private int ed_fk_Produtos;
 
@@ -34,12 +33,12 @@ public class ed_venda_produto {
         this.ed_Quantidade = ed_Quantidade;
     }
 
-    public double getEd_PrecoUnitario() {
-        return ed_PrecoUnitario;
+    public double getEd_ValorUnitario() {
+        return ed_ValorUnitario;
     }
 
-    public void setEd_PrecoUnitario(double ed_PrecoUnitario) {
-        this.ed_PrecoUnitario = ed_PrecoUnitario;
+    public void setEd_ValorUnitario(double ed_ValorUnitario) {
+        this.ed_ValorUnitario = ed_ValorUnitario;
     }
 
     public double getEd_Subtotal() {
