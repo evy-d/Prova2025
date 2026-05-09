@@ -1,6 +1,6 @@
 package dao;
 
-import bean.ed_usuarios; // Certifique-se de que o nome da classe Bean está correto
+import bean.ed_usuarios;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,14 +8,12 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * DAO para a tabela ed_usuarios
- */
+
 public class DaoEdUsuarios extends DaoAbstract {
 
-    private String url = "jdbc:mysql://localhost:3306/seu_banco_de_dados"; // Ajuste o nome do banco
-    private String user = "root"; // Ajuste seu usuário
-    private String password = ""; // Ajuste sua senha
+    private String url = "jdbc:mysql://localhost:3306/db_evelyn_dutra"; 
+    private String user = "root"; 
+    private String password = "";
 
     @Override
     public void insert(Object object) {
@@ -24,7 +22,6 @@ public class DaoEdUsuarios extends DaoAbstract {
             Class.forName("com.mysql.jdbc.Driver");
             Connection cnt = DriverManager.getConnection(url, user, password);
             
-            // São 8 interrogações correspondentes aos 8 campos da sua tabela
             String sql = "insert into ed_usuarios values (?,?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
             
@@ -96,13 +93,11 @@ public class DaoEdUsuarios extends DaoAbstract {
 
     @Override
     public Object list(int id) {
-        // Implementar no futuro com ResultSet
         return null;
     }
 
     @Override
     public Object listAll() {
-        // Implementar no futuro com List e ResultSet
         return null;
     }
 }
