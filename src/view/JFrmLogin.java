@@ -40,7 +40,7 @@ public class JFrmLogin extends javax.swing.JFrame {
 
         jLabel1.setText("Usuario");
 
-        jLabel2.setText("Senha");
+        jLabel2.setText("Senha (1234)");
 
         jBtnLogar.setText("Logar");
         jBtnLogar.addActionListener(new java.awt.event.ActionListener() {
