@@ -103,5 +103,4 @@ public class ed_produtos {
         this.ed_fk_Fornecedor = ed_fk_Fornecedor;
     }
     
-    
 }
