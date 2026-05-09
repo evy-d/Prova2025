@@ -15,7 +15,8 @@ public class JFrmPrincipal extends javax.swing.JFrame {
      */
     public JFrmPrincipal() {
         initComponents();
-        setTitle("Sistema IFMS");
+        this.setLocationRelativeTo(null);
+        setTitle("Menu Principal");
     }
 
     /**

@@ -28,7 +28,6 @@ public class DaoEdCompraProduto extends DaoAbstract {
             Class.forName("com.mysql.jdbc.Driver");
             Connection cnt = DriverManager.getConnection(url, user, password);
             
-            // 5 campos: idCompraProduto, Quantidade, PrecoCusto, FK_Compra, FK_Produtos
             String sql = "insert into ed_compra_produto values (?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
             
@@ -48,7 +47,6 @@ public class DaoEdCompraProduto extends DaoAbstract {
 
     @Override
     public void update(Object object) {
-        // Método vazio para manter a integridade da movimentação
     }
 
     @Override

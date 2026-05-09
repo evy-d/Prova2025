@@ -15,8 +15,9 @@ public class ed_compra {
     private int ed_idCompra;
     private Date ed_DataCompra;
     private double ed_Total;
+    private String ed_nota_fiscal;
+    private String ed_status;
     
-    // FKs
     private int ed_fk_Fornecedor;
     private int ed_fk_Usuarios;
 
@@ -44,6 +45,23 @@ public class ed_compra {
         this.ed_Total = ed_Total;
     }
 
+    public String getEd_nota_fiscal() {
+        return ed_nota_fiscal;
+    }
+
+    public void setEd_nota_fiscal(String ed_nota_fiscal) {
+        this.ed_nota_fiscal = ed_nota_fiscal;
+    }
+
+    public String getEd_status() {
+        return ed_status;
+    }
+
+    public void setEd_status(String ed_status) {
+        this.ed_status = ed_status;
+    }
+    
+
     public int getEd_fk_Fornecedor() {
         return ed_fk_Fornecedor;
     }
@@ -60,5 +78,4 @@ public class ed_compra {
         this.ed_fk_Usuarios = ed_fk_Usuarios;
     }
 
-    
 }

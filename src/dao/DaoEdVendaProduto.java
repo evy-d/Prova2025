@@ -48,7 +48,6 @@ public class DaoEdVendaProduto extends DaoAbstract {
 
     @Override
     public void update(Object object) {
-        // Vazio para manter a integridade financeira
     }
 
     @Override
