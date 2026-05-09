@@ -253,7 +253,7 @@ public class JDlgEd_Usuarios extends javax.swing.JDialog {
                     .addComponent(jBtnEd_Confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBtnEd_Cancelar)
                     .addComponent(jBtnEd_Pesquisar))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
